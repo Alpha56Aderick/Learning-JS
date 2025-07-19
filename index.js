@@ -1,18 +1,17 @@
- // EVENTS
- // element.addEventListner("event", function(){})
- console.log('hello world');
+ // EVENTS - ptr2
+ // change card display on click
 
- const button2 = document.querySelector('.btn2');
-   
- function alertBtn() {
-    button2.style.backgroundColor = 'red';
-    alert('Button clicked!');
- }
-    button2.addEventListener("click", alertBtn);
+ const revealButton = document.querySelector('.reveal-button');
+ const hiddenContent = document.querySelector('.content-hidden');
 
-const newBackgroundColor = document.querySelector('.box3')
-
-function changeBgColor () {
-    newBackgroundColor.style.backgroundColor = 'blue';
+function toggleContent() {
+    if(hiddenContent.classList.contains('reveal-button'))
+        {
+        hiddenContent.classList.remove('reveal-button');
+    }
+    else{  
+        hiddenContent.classList.add('reveal-button');
+    }
 }
-newBackgroundColor.addEventListener("mouseover", changeBgColor);
+
+revealButton.addEventListener('click', toggleContent);
