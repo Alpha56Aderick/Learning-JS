@@ -1,28 +1,18 @@
- //const title = document.getElementById("main-heading");
-//title.style.color = 'red'
-/*
-const listItems = document.querySelectorAll('.movie');
- 
- for (i = 0; i<listItems.length; i++) {
-     listItems[i].style.color = 'yellow';
+ // EVENTS
+ // element.addEventListner("event", function(){})
+ console.log('hello world');
+
+ const button2 = document.querySelector('.btn2');
+   
+ function alertBtn() {
+    button2.style.backgroundColor = 'red';
+    alert('Button clicked!');
  }
+    button2.addEventListener("click", alertBtn);
 
- // creating anew element 
- const ul = document.querySelector('ul'); 
- const li = document.createElement('li');   
- 
- ul.append(li);
- li.innerText = 'The Lord of the Rings';
- // adding and removing attribute
- li.setAttribute('id','main-heading');
- li.removeAttribute('id');
+const newBackgroundColor = document.querySelector('.box3')
 
- // changing the class of an element
-li.classList.add('movie');
-li.classList.remove('movie');
-// remove element
-li.remove();
-*/
-
-    // transversing the DOM
-    
+function changeBgColor () {
+    newBackgroundColor.style.backgroundColor = 'blue';
+}
+newBackgroundColor.addEventListener("mouseover", changeBgColor);
