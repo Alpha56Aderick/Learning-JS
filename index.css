@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(7, 2, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.container{
+    border-radius: 12px;
+    box-shadow: 0 0 3px;
+    border: 2px solid white;
+    padding: 1rem;
+}
+#main-heading{
+    color: white;
+    font-size: 2rem;
+
+}
+.movie{
+    background-color: white;
+    color: rgb(7, 2, 27);
+    padding: 5px;
+    margin: 5px;
+}
