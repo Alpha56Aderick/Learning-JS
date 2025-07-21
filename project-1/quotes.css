@@ -14,16 +14,18 @@ body{
     text-align: center;
 }
 .quotes-card{
+    background-color: white;
+    border-radius: 12px;
     grid-column: 2/3;
     grid-row: 2;
     max-width: 360px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 .card-heading{
     background-color: aquamarine;
     padding: 5px 7px;
     border: 2px solid white;
-    border-radius: 8px;
     text-align: center;
     line-height: 1;
 }
@@ -54,3 +56,17 @@ body{
     color: rgb(133, 42, 42);
     font-weight: 500;
 }
+ @media ( min-width: 768px) {
+    body{
+        background: url(/project-3/img/library-dsk.jpeg) no-repeat center 
+        center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arcordian{
+        width: 50%;
+    }
+    
+ }

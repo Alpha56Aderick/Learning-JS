@@ -49,3 +49,14 @@ body{
     transition: .5s;
  
 }
+ @media ( min-width: 768px) {
+    body{
+        background: url(/project-3/img/library-dsk.jpeg) no-repeat center 
+        center/cover;
+        height: 100vh;
+    }
+    .arcordian{
+        width: 50%;
+    }
+    
+ }

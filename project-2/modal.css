@@ -36,3 +36,14 @@ body{
 .modal-contain{
     display: none;
 }
+ @media ( min-width: 768px) {
+    body{
+        background: url(/project-3/img/library-dsk.jpeg) no-repeat center 
+        center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ }
