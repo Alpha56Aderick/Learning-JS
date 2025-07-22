@@ -10,11 +10,55 @@
     <link rel="stylesheet" href="/project-5/task.css">
 </head>
 <body>
-    <h1>CREATING ELEMENTS</h1>
-    <div class="input-container">
-         <input type="text" class="input-field" placeholder="Enter you message">
-         <i id="icons" class="fa-solid fa-plus"></i>
-    </div>
+  <main class="quotes-page">
+    <header class="header">
+      <h1>Quotes Island</h1>
+    </header>
+    <section class="filters">
+      <button class="filter">
+        <i class="fa-solid fa-filter"></i> FILTERS
+      </button>
+      <button class="filter all">ALL</button>
+      <button class="filter motivate">MOTIVATIONAL</button>
+      <button class="filter inspire">INSPARATIONAL</button>
+    </section>
+    <section class="quote-cards">
+      <article class="quote-card">
+          <div class="quote-container">
+            <p class="quote">
+               "Any fool can write code that a computer can understand.
+               Good programmers write code that humans can understand."
+            </p>
+            <span class="author">Martin Fowler</span>
+          </div>
+        </article>
+      <article class="quote-card">
+          <div class="quote-container">
+            <p class="quote">
+               "Success is not the absence of obstacles, 
+               but the courage to push through them."
+            </p>
+            <span class="author">Thomas Shelby</span>
+          </div>
+      </article>
+      <article class="quote-card">
+          <div class="quote-container">
+            <p class="quote">
+               "Love recognizes no barriers. It jumps hurdles, leaps fences, 
+               penetrates walls to arrive at its destination full of hope."
+            </p>
+            <span class="author">Maya Angelou</span>
+          </div>
+      </article>
+      <article class="add-quote-card quote-card">
+         <div class="add-buttoncontainer">
+            <button class="add-quote-button">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+         </div>
+      </article>      
+      </section>
+    </main>
   <script src="/project-5/task.js"></script>
 </body>
 </html>
