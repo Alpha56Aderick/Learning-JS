@@ -91,3 +91,25 @@ h1{
     font-size: 2rem;
     color: #e26613;
 }
+
+@media (min-width: 768px) {
+    body{
+        font-size: 1.5rem;
+    }
+    .quote-cards{
+        flex-direction: row;
+        align-items: center;
+    }
+    .quote-card{
+        width: 90%;
+    }
+    .add-quote-button{
+        width: 90%;
+    }
+    filters{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
