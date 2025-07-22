@@ -1,0 +1,10 @@
+body{
+    background-color: violet;
+    position: relative;
+}
+.input-field{
+    position: relative;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
