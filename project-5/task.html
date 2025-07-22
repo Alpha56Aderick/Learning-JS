@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/project-5/task.css">
 </head>
 <body>
-  <main class="quotes-page">
+  <main class="quotes-page"> 
     <header class="header">
       <h1>Quotes Island</h1>
     </header>
@@ -58,7 +58,26 @@
          </div>
       </article>      
       </section>
+      -->
+  
+    <form class="modal-card">
+      <input type="text" class="quote-input input-field" placeholder="Enter your quote here..." required>
+      <input type="text" class="author-input input-field" placeholder="Enter the author here..." required>
+      <div class="quote-type">
+       <input type="text" class="quote-type-input input-field" list="categories" placeholder="Enter category..." required>
+      <datalist id="categories">
+        <option value="Inspirational">
+        <option value="Motivational">
+        <option value="Love">
+      </datalist>
+      </div>
+      <button type="submit" class="submit-button">Add Quote</button>
+      <button type="button" class="close-button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </form>
     </main>
+
   <script src="/project-5/task.js"></script>
 </body>
 </html>
