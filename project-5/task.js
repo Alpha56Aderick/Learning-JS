@@ -24,12 +24,12 @@ modalAddBtn.addEventListener('click', function(){
             newQuoteContainer.classList.add('quote-container');
         
         let newQuote = document.createElement('p')
-            newQuote.innerHTML = `${quoteInput.value}`;
+            newQuote.innerText = `${quoteInput.value}`;
             newQuote.classList.add('quote');
             newQuoteContainer.appendChild(newQuote);
         
         let newAuthor = document.createElement('span');
-            newAuthor.innerHTML = `${authorInput.value}`;
+            newAuthor.innerText = `${authorInput.value}`;
             newAuthor.classList.add('author');
             newQuoteContainer.appendChild(newAuthor);
 
@@ -37,6 +37,7 @@ modalAddBtn.addEventListener('click', function(){
         alert('Please fill in all fields');
     }else {
         newQuoteCard.appendChild(newQuoteContainer);
+        
     }
 })
 
