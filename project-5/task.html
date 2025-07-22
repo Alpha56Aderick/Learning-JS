@@ -11,9 +11,11 @@
 </head>
 <body>
   <main class="quotes-page"> 
+         <!--header section-->
     <header class="header">
       <h1>Quotes Island</h1>
     </header>
+         <!--fliter section-->
     <section class="filters">
       <button class="filter">
         <i class="fa-solid fa-filter"></i> FILTERS
@@ -22,7 +24,9 @@
       <button class="filter motivate">MOTIVATIONAL</button>
       <button class="filter inspire">INSPARATIONAL</button>
     </section>
+         <!--Quote cards section-->
     <section class="quote-cards">
+         <!--first quote card -->
       <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
@@ -32,6 +36,7 @@
             <span class="author">Martin Fowler</span>
           </div>
         </article>
+         <!--Second Qute Card-->
       <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
@@ -41,6 +46,7 @@
             <span class="author">Thomas Shelby</span>
           </div>
       </article>
+           <!--Third quote Card-->
       <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
@@ -50,32 +56,39 @@
             <span class="author">Maya Angelou</span>
           </div>
       </article>
+         <!--New Quote card container-->
+      <article id="new-quotecard" class="quote-card">
+          <!--Card's content uploaded by JavaScript-->
+      </article>
+         <!--Add a new card card and button -->
       <article class="add-quote-card quote-card">
-         <div class="add-buttoncontainer">
+          <div class="add-buttoncontainer">
             <button class="add-quote-button">
               <i class="fa-solid fa-plus"></i>
             </button>
          </div>
       </article>      
       </section>
-      -->
-  
-    <form class="modal-card">
-      <input type="text" class="quote-input input-field" placeholder="Enter your quote here..." required>
-      <input type="text" class="author-input input-field" placeholder="Enter the author here..." required>
-      <div class="quote-type">
-       <input type="text" class="quote-type-input input-field" list="categories" placeholder="Enter category..." required>
-      <datalist id="categories">
-        <option value="Inspirational">
-        <option value="Motivational">
-        <option value="Love">
-      </datalist>
-      </div>
-      <button type="submit" class="submit-button">Add Quote</button>
-      <button type="button" class="close-button">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </form>
+
+         <!--Modal card  -->
+      <form id="modal-card">
+        <input type="text" class="quote-input input-field" placeholder="Enter your quote here..." required>
+        <input type="text" class="author-input input-field" placeholder="Enter the author here..." required>
+        <!--category selection 
+        <div class="quote-type">
+         <input type="text" class="quote-type-input input-field" list="categories" placeholder="Enter category..." required>
+          <datalist id="categories">
+            <option value="Inspirational">
+            <option value="Motivational">
+            <option value="Love">
+          </datalist>
+        </div>
+        -->
+        <button type="submit" class="submit-button">Add Quote</button>
+        <button type="button" class="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </form>  
     </main>
 
   <script src="/project-5/task.js"></script>
