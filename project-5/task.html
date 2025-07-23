@@ -25,9 +25,8 @@
       <button class="filter inspire">INSPARATIONAL</button>
     </section>
          <!--Quote cards section-->
-    <section class="quote-cards">
+    <section id="cards-container" class="quote-cards">
          <!--first quote card -->
-      <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
                "Any fool can write code that a computer can understand.
@@ -35,9 +34,7 @@
             </p>
             <span class="author">Martin Fowler</span>
           </div>
-        </article>
          <!--Second Qute Card-->
-      <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
                "Success is not the absence of obstacles, 
@@ -45,9 +42,7 @@
             </p>
             <span class="author">Thomas Shelby</span>
           </div>
-      </article>
            <!--Third quote Card-->
-      <article class="quote-card">
           <div class="quote-container">
             <p class="quote">
                "Love recognizes no barriers. It jumps hurdles, leaps fences, 
@@ -55,21 +50,19 @@
             </p>
             <span class="author">Maya Angelou</span>
           </div>
-      </article>
-         <!--New Quote card container-->
-      <article id="new-quotecard" class="quote-card">
-          <!--Card's content uploaded by JavaScript-->
-      </article>
-         <!--Add a new card card and button -->
-      <article class="add-quote-card quote-card">
-          <div class="add-buttoncontainer">
-            <button class="add-quote-button">
-              <i class="fa-solid fa-plus"></i>
-            </button>
-         </div>
-      </article>      
-      </section>
 
+          <!--Card's content uploaded by JavaScript-->
+
+         
+      </section>
+      <!--Add a new card button -->
+      <article>
+         <div class="add-buttoncontainer">
+           <button class="add-quote-button">
+             <i class="fa-solid fa-plus"></i>
+           </button>
+       </div>
+      </article>
          <!--Modal card  -->
       <form id="modal-card">
         <input type="text" class="quote-input input-field" placeholder="Enter your quote here..." required>
@@ -88,8 +81,9 @@
         <button type="button" class="close-button">
           <i class="fa-solid fa-xmark"></i>
         </button>
-      </form>  
-    </main>
+      </form>
+
+  </main>
 
   <script src="/project-5/task.js"></script>
 </body>

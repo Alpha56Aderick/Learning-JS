@@ -1,8 +1,8 @@
 const addQuoteCardBtn = document.querySelector('.add-quote-button');
 const modalCard = document.getElementById('modal-card');
 const modalCloseBtn = document.querySelector('.close-button');
-const newQuoteCard = document.getElementById('new-quotecard');
 const modalAddBtn = document.querySelector('.submit-button');
+const quoteCardContainer = document.getElementById('cards-container');
 let quoteInput = document.querySelector('.quote-input');
 let authorInput = document.querySelector('.author-input')
 let quoteCtg = document.getElementById('categories');
@@ -36,7 +36,7 @@ modalAddBtn.addEventListener('click', function(){
     if(authorInput.value === '' || quoteInput.value === '') {
         alert('Please fill in all fields');
     }else {
-        newQuoteCard.appendChild(newQuoteContainer);
+        quoteCardContainer.appendChild(newQuoteContainer);
         
     }
 })
