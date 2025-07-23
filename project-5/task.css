@@ -81,7 +81,7 @@ h1{
     margin-top: 5px;
 }
 #new-quotecard{
-    display: flex;
+    display: flex; 
     font-weight: 520;
     background-color: white;
     border-radius: 10px;
@@ -163,6 +163,7 @@ h1{
         padding: 1.25rem;
     }
     .quote-container{
+        display: none;
         text-align: start;
         position: relative;
         padding-left: 1.25rem;

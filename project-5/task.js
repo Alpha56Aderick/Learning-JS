@@ -3,6 +3,8 @@ const modalCard = document.getElementById('modal-card');
 const modalCloseBtn = document.querySelector('.close-button');
 const modalAddBtn = document.querySelector('.submit-button');
 const quoteCardContainer = document.getElementById('cards-container');
+const allCtgFltr = document.getElementById('all-fltr-btn');
+let quoteCardContainers = document.querySelectorAll('.quote-container');
 let quoteInput = document.querySelector('.quote-input');
 let authorInput = document.querySelector('.author-input')
 let quoteCtg = document.getElementById('categories');
@@ -41,6 +43,14 @@ modalAddBtn.addEventListener('click', function(){
     }
 })
 
-        
+   // Filter buttons and logic;
 
-    
+   allCtgFltr.addEventListener('click', function(){
+      console.log('all filter clicked');
+    quoteCardContainers.forEach( container => {
+        container.style.display = 'flex';
+        console.log('all cards displayed!');
+
+    })
+
+   })
